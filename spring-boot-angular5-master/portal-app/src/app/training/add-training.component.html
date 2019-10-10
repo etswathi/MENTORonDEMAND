@@ -1,0 +1,75 @@
+<div class="bg">
+    <article>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+          </div>
+          <div class="col-lg-4">
+            <br>
+            <br>
+  <h2 class="text-center">Add Training</h2>
+  <br>
+  <br>
+ 
+<form>
+    <div class="form-group">
+        <label for="id">ID:</label>
+        <input [(ngModel)]="training.id" placeholder="id" name="id" class="form-control" id="id">
+      </div>
+      <div class="form-group">
+          <label for="progress">Progress(25%,50%,75%,100%):</label>
+          <input [(ngModel)]="training.progress" placeholder="progress" name="progress" class="form-control" id="progress">
+        </div>
+        <div class="form-group">
+            <label for="commissionAmount">Commission Amount:</label>
+            <input [(ngModel)]="training.commissionAmount" placeholder="commissionAmount" name="commissionAmount" class="form-control" id="commissionAmount">
+          </div>
+          <div class="form-group">
+              <label for="rating">Rating:</label>
+              <input [(ngModel)]="training.rating" placeholder="rating" name="rating" class="form-control" id="rating">
+            </div>
+            <div class="form-group">
+                <label for="startDate">Start date:</label>
+                <input [(ngModel)]="training.startDate" placeholder="startDate" name="startDate" class="form-control" id="startDate">
+              </div>
+              <div class="form-group">
+                  <label for="endDate">End date:</label>
+                  <input [(ngModel)]="training.endDate" placeholder="endDate" name="endDate" class="form-control" id="endDate">
+                </div>
+                <div class="form-group">
+                    <label for="startTime">Start Time:</label>
+                  <input [(ngModel)]="training.startTime" placeholder="startTime" name="startTime" class="form-control" id="startTime">
+                  </div>
+                  <div class="form-group">
+                      <label for="endTime">End Time:</label>
+                    <input [(ngModel)]="training.endTime" placeholder="endTime" name="endTime" class="form-control" id="endTime">
+                    </div>
+                    <div class="form-group">
+                        <label for="amountRecieved">Amount Recieved:</label>
+                        <input [(ngModel)]="training.amountRecieved" placeholder="amountRecieved" name="amountRecieved" class="form-control" id="amountRecieved">
+                      </div>
+                      <div class="form-group">
+                          <label for="amountToMentor">Amount to mentor:</label>
+                          <input [(ngModel)]="training.amountToMentor" placeholder="amountToMentor" name="amountToMentor" class="form-control" id="amountToMentor">
+                        </div>
+                        <div class="form-group">
+                            <label for="fees">Fees:</label>
+                            <input [(ngModel)]="training.fees" placeholder="fees" name="fees" class="form-control" id="fees">
+                          </div>
+
+  <div class="form-group">
+    <label for="status">Status:</label>
+    <input [(ngModel)]="training.status" placeholder="status" name="status" class="form-control" id="status">
+  </div>
+
+  
+
+  <button class="btn btn-success" (click)="createTraining()">Create</button>
+</form>
+</div>
+<div class="col-lg-6">
+  </div>
+</div>
+</div>
+</article>
+</div>

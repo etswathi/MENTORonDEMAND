@@ -1,0 +1,57 @@
+<div class="col-md-6">
+    <h2 style="font-variant:bold; color:black;font-size:40px;font-family: Georgia, 'Times New Roman', Times, serif;">Training Details</h2>
+    
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th class="hidden">Id</th>
+         
+        <th>PROGRESS</th>
+        <th>COMMISSION AMOUNT</th>
+        <th>RATING</th>
+        <th>START DATE</th>
+        <th>START TIME</th>
+        <th>END TIME</th>
+        <th>AMOUNT RECIEVED</th>
+      
+        <th>AMOUNT TO MENTOR</th>
+       
+      
+     <th>FEES</th>
+     <th>STATUS</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let training of trainings">
+        <td class="hidden">{{training.id}}</td>
+        <td><circle-progress
+          [percent]="training.progress"
+          [radius]="25"
+          [outerStrokeWidth]="8"
+          [innerStrokeWidth]="4"
+          [outerStrokeColor]="'#78C000'"
+          [innerStrokeColor]="'#C7E596'"
+          [animation]="true"
+          [animationDuration]="200"
+        ></circle-progress></td>
+        <td>{{training.commissionAmount}}</td>
+        <td>{{training.rating}}</td>
+        <td>{{training.startDate}}</td>
+        <td>{{training.startTime}}</td>
+        <td>{{training.endTime}}</td>
+        <td>{{training.amountReceived}}</td>
+      
+        <td>{{training.amountToMentor}}</td>
+       
+        <td>{{training.fees}}</td>
+        <td>{{training.status}}</td>
+        
+
+        <td><button class="btn btn-danger" (click)="deleteTraining(training)"> Delete Training</button></td>
+        <td><button class="btn btn-danger" (click)="getSkil(training.id)"> View skill</button></td>
+        <td><button class="btn btn-danger" (click)="getPayby(training.id)">>Payment slip</button></td>
+        
+      </tr>
+      </tbody>
+    </table>
+    </div>

@@ -1,0 +1,31 @@
+.button {
+  background-color:navy;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  float:left;
+  cursor: pointer;
+}
+
+
+
+
+.bg {
+      background-image: url("https://wpamelia.com/wp-content/uploads/2019/02/black-and-white-black-background-bubbles-1187972.jpg");
+      min-height:350px;
+    background-repeat: no-repeat;
+  
+    background-attachment:fixed;
+    background-size:cover;
+    font-size:15px; 
+    }
+    h2{font-variant:bold; color:white;font-size:40px;font-family: Georgia, 'Times New Roman', Times, serif; ;
+  }
+    form{color:white;font-size:18px;
+      font-family:"Times New Roman";color:white;}
+      
+      

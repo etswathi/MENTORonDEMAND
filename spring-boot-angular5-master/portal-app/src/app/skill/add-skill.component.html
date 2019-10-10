@@ -1,0 +1,54 @@
+<div class="bg">
+    <article>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+          </div>
+          <div class="col-lg-4">
+            <br>
+            <br>
+
+  <h2 class="text-center">Add Skill</h2>
+  <br>
+  <br>
+  
+<form>
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="name" [(ngModel)]="skill.name" placeholder="name" name="name" class="form-control" id="name">
+      </div>
+
+  
+  
+
+  <div class="form-group">
+    <label for="toc">TOC:</label>
+    <input [(ngModel)]="skill.toc" placeholder="toc" name="toc" class="form-control" id="toc">
+  </div>
+
+  <div class="form-group">
+    <label for="prerequisites">Prerequisites:</label>
+    <input [(ngModel)]="skill.prerequisites" placeholder="prerequisites" name="prerequisites" class="form-control" id="prerequisites">
+  </div>
+
+  <div class="form-group">
+      <label for="createdAt">Created At:</label>
+      <input [(ngModel)]="skill.createdAt" placeholder="createdAt" name="createdAt" class="form-control" id="createdAt">
+    </div>
+
+    <div class="form-group">
+        <label for="updatedAt">Updated At:</label>
+        <input [(ngModel)]="skill.updatedAt" placeholder="updatedAt" name="updatedAt" class="form-control" id="updatedAt">
+      </div>
+  
+
+
+  <button class="btn btn-success" (click)="createSkill()">Create</button>
+</form>
+</div>
+<div class="col-lg-6">
+  </div>
+</div>
+</div>
+</article>
+</div>

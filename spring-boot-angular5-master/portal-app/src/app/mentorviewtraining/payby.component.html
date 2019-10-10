@@ -1,0 +1,33 @@
+<div class="col-md-6">
+    <h2 style="font-variant:bold; color:black;font-size:40px;font-family: Georgia, 'Times New Roman', Times, serif;">Payment Details</h2>
+  <table class="table table-striped">
+  <thead>
+  <tr>
+          <th class="hidden">ID</th>
+           
+          <th>TXN TYPE</th>
+          <th>AMOUNT</th>
+          <th>REMARKS</th>
+  
+          <th>MENTOR ID</th>
+          <th>PAYMENT TYPE</th>
+          <th>TRAINING ID</th>
+       
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let payment of user1payments">
+          <td>{{payment.id}}</td>
+          <td>{{payment.txnType}}</td>
+          <td>{{payment.amount}}</td>
+          <td>{{payment.remarks}}</td>
+          <td>{{payment.mentorId}}</td>
+          
+          <td>{{payment.paymentType}}</td>
+          <td>{{payment.trainingId}}</td>
+          
+        </tr>
+        </tbody>
+      </table>
+      </div>
+  

@@ -1,0 +1,58 @@
+<a routerLink="/admintech" class="button">BACK</a>
+
+<br>
+<br><br>
+
+<div class="col-md-6">
+<h2 style="font-family:Georgia, 'Times New Roman', Times, serif"> Mentor Details</h2>
+
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th class="hidden">ID</th>
+    
+    <th>USERNAME</th>
+    <th>PASSWORD</th>
+    <th>FIRSTNAME</th>
+    <th>LASTNAME</th>
+    <th>CONTACT NUMBER</th>
+    <th>REG CODE</th>
+    <th>ROLE</th>
+    <th>LINKEDIN URL</th>
+    <th>YEARS OF EXPERIENCE</th>
+    <th>ACTIVE</th>
+    <th>CONFIRMED SIGN UP</th>
+    <th>RESET PASSWORD</th>
+    <th>RESET PASSWORD DATE</th>
+    <th>TIME ZONE</th>
+    <th>MENTOR PROFILE</th>
+    <th>RATING</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let mentor of mentors">
+    <td>{{mentor.id}}</td>
+    <td>{{mentor.userName}}</td>
+    <td>{{mentor.password}}</td>
+    <td>{{mentor.firstName}}</td>
+    <td>{{mentor.lastName}}</td>
+    <td>{{mentor.contactNumber}}</td>
+    <td>{{mentor.regCode}}</td>
+    <td>{{mentor.role}}</td>
+    <td>{{mentor.linkedin_Url}}</td>
+
+    <td>{{mentor.yearsOfExperience}}</td>
+    <td>{{mentor.active}}</td>
+    <td>{{mentor.confirmed_SignUp}}</td>
+    <td>{{mentor.resetPassword}}</td>
+    <td>{{mentor.resetPasswordDate}}</td>
+    <td>{{mentor.timeZone}}</td>
+    <td>{{mentor.mentorProfile}}</td>
+    <td>{{mentor.rating}}</td>
+    <td><button class="btn btn-danger" (click)="deleteMentor(mentor)"> Delete Mentor</button></td>
+  </tr>
+  </tbody>
+</table>
+
+
+</div>

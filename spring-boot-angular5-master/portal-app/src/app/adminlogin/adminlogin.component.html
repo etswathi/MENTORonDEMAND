@@ -1,0 +1,101 @@
+
+<!doctype html>
+<html>
+<head>
+<style>
+li a{color:white;text-shadow:2 px 2px;}
+
+body{background-image:url("https://wpamelia.com/wp-content/uploads/2019/02/black-and-white-black-background-bubbles-1187972.jpg");
+min-height:350px;
+  background-repeat: no-repeat;
+
+  background-attachment:fixed;
+  background-size:cover;
+  font-size:15px; }
+form {font-family:"Times New Roman";text-align:center;color:white;}
+.button {
+  background-color:navy;
+  border: none;
+  color:white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top:0px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+    <a routerLink="/useradmin" class="button">BACK</a>
+    
+<form method="post">
+  <br>
+  <br>
+  <br>
+    <img src="./assets/img/signin.jpg" width="150" height="150">
+
+   
+    <br>
+    <br>
+    <br>
+    <br>
+  
+<h1 style="font-size:25px;text-align:center;color:white;">ADMIN LOGIN</h1>
+
+Username:<input type="text"[(ngModel)] = "userName" placeholder ="userName" name="userName"/><br><br>
+Password:<input type="text" [(ngModel)] = "password" placeholder ="password" name="password"/><br><br>
+<button (click)="validate(userName,password)" class="button">Submit</button><br><br>
+
+
+
+  
+
+
+
+
+<a routerLink="/admintech" class="button">SEARCH FOR COURSES AND MENTORS AVAILABLE</a>
+
+
+
+</form>
+<br>
+<br>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

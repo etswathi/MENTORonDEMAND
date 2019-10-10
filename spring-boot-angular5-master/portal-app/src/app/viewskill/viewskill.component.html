@@ -1,0 +1,34 @@
+
+  <a routerLink="/userland" class="button">Back</a>
+  
+  
+  <h2 style="font-variant:bold; color:black;font-size:40px;font-family: Georgia, 'Times New Roman', Times, serif;">Skill Details</h2>
+  
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>NAME</th>
+      <th>TOC</th>
+      <th>PREREQUISITES</th>
+      <th>CREATED AT</th>
+      <th>UPDATED AT </th>
+     
+
+      
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let skill of skills">
+      <td>{{skill.id}}</td>
+      <td>{{skill.name}}</td>
+      <td>{{skill.toc}}</td>
+      <td>{{skill.prerequisites}}</td>
+      <td>{{skill.createdAt | date}}</td>
+      <td>{{skill.updatedAt | date}}</td>
+      
+     
+    </tr>
+    </tbody>
+  </table>
+  

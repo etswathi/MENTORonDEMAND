@@ -1,0 +1,126 @@
+
+               
+         
+    
+      <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+      <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+      <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+      <!------ Include the above in your HEAD tag ---------->
+      
+      <a routerLink="/viewtrainings" class="button">Back</a>
+      
+      <div class="bg">
+          <br>
+          <br>
+          <br>
+          <br>
+      
+          
+          
+       <div class="well span8 offset2">
+              <div class="row-fluid user-row">
+                  <div class="span1">
+                      <img class="img-circle"
+                           src="https://ops.org.ng/wp-content/uploads/2018/07/MENTORO.png"
+                           alt="User Pic">
+                  </div>
+                  <div class="span8">
+                      
+                      <span class="text-muted">Mentor On Demand</span>
+                  </div>
+                 
+              
+              </div>
+
+
+
+
+
+              <div class="row-fluid user-infos cyruxx">
+                  <div class="span8 offset1">
+                      <div class="panel panel-primary">
+                          <div class="panel-heading">
+                              <h3 class="panel-title">Mentor Details</h3>
+                          </div>
+
+                        
+
+                          
+                          <div class="panel-body">
+                              <div class="row-fluid">
+                                  <div class="span6">
+                                      <img class="img-circle"
+                                           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7ruDmmyxaJxoflQalkabt2wjET06qGbsahn879B0LMG4C3G5J"
+                                           alt="User Pic">
+                                        </div>
+                           
+                                        <td>
+                                        <table class="table table-condensed table-responsive table-user-information">
+                                            <tbody *ngFor="let training of trainings">
+                                                   
+                                                  
+
+
+
+                                                            <tr>
+                                                                    <td>Mentor Id:</td>
+                                                                    <td>{{training.mentors.id}}</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>First Name:</td>
+                                                                    <td>{{training.mentors.firstName}}</td>
+                                                                </tr>
+                                                              
+                                                                <tr>
+                                                                    <td>Last Name:</td>
+                                                                    <td>{{training.mentors.lastName}}</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Contact Number:</td>
+                                                                    <td>{{training.mentors.contactNumber}}</td>
+                                                                </tr>
+
+                                            <tr>
+                                                <td>Training Id:</td>
+                                                <td>{{training.id}}</td>
+                                            </tr>
+                                            <tr>
+                                                    <td>Technology Name:</td>
+                                                    <td>{{training.technologies.techName}}</td>
+                                                </tr>
+                                          
+                                            <tr>
+                                                    <td>Linkedin Url:</td>
+                                                    <td>{{training.mentors.linkedin_Url}}</td>
+                                                </tr>
+                                                <tr>
+                                                        <td>Years of Experience:</td>
+                                                        <td>{{training.mentors.yearsOfExperience}}</td>
+                                                    </tr>
+                                                    <tr>
+                                                            <td>Rating:</td>
+                                                            <td>{{training.mentors.rating}}</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>Mentor Profile:</td>
+                                                                <td>{{training.mentors.mentorProfile}}</td>
+                                                            </tr>
+                                           
+                                            
+                                        
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-footer">
+                               
+                                <span class="pull-right">
+                                    
+                                    <button class="btn btn-danger" routerLink="/viewtrainings" type="button"
+                                            data-toggle="tootip"
+                                            data-original-title="Remove this user"><i class="icon-remove icon-white"></i></button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>

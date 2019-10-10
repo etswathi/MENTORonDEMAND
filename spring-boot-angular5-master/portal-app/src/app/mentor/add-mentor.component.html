@@ -1,0 +1,121 @@
+
+<div class="bg">
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+        </div>
+        <div class="col-lg-4">
+
+
+<br>
+<br>
+
+          <h2 class="text-center">Add Mentor</h2>
+          <br>
+          <br>
+          
+          <form>
+
+
+              
+
+            <div class="form-group">
+                <label for="userName">Username:</label>
+                <input [(ngModel)]="mentor.userName" placeholder="userName" name="userName" class="form-control"
+                  id="userName">
+              </div>
+
+            <div class="form-group">
+              <label for="password">Password:</label>
+              <input [(ngModel)]="mentor.password" placeholder="password" name="password" class="form-control"
+                id="password">
+            </div>
+
+            <div class="form-group">
+              <label for="firstName">Firstname:</label>
+              <input [(ngModel)]="mentor.firstName" placeholder="firstName" name="firstName" class="form-control"
+                id="firstName">
+            </div>
+
+            <div class="form-group">
+              <label for="lastName">Lastname:</label>
+              <input [(ngModel)]="mentor.lastName" placeholder="lastName" name="lastName" class="form-control"
+                id="lastName">
+            </div>
+
+            <div class="form-group">
+              <label for="contactNumber">Contact Number:</label>
+              <input [(ngModel)]="mentor.contactNumber" placeholder="contactNumber" name="contactNumber"
+                class="form-control" id="contactNumber">
+            </div>
+
+            <div class="form-group">
+              <label for="regCode">RegCode:</label>
+              <input [(ngModel)]="mentor.regCode" placeholder="regCode" name="regCode" class="form-control"
+                id="regCode">
+            </div>
+
+            <div class="form-group">
+              <label for="role">Role:</label>
+              <input [(ngModel)]="mentor.role" placeholder="role" name="role" class="form-control" id="role">
+            </div>
+            <div class="form-group">
+              <label for="linkedin_Url">LinkedinUrl:</label>
+              <input [(ngModel)]="mentor.linkedin_Url" placeholder="linkedin_Url" name="linkedin_Url"
+                class="form-control" id="linkedin_Url">
+            </div>
+            
+
+            <div class="form-group">
+              <label for="yearsOfExperience">Years Of Experience:</label>
+              <input [(ngModel)]="mentor.yearsOfExperience" placeholder="yearsOfExperience" name="yearsOfExperience"
+                class="form-control" id="yearsOfExperience">
+            </div>
+
+
+            <div class="form-group">
+              <label for="active">Active:</label>
+              <input [(ngModel)]="mentor.active" placeholder="active" name="active" class="form-control" id="active">
+            </div>
+
+            <div class="form-group">
+              <label for="confirmed_SignUp">Confirmed Sign Up:</label>
+              <input [(ngModel)]="mentor.confirmed_SignUp" placeholder="confirmed_SignUp" name="confirmed_SignUp"
+                class="form-control" id="confirmed_SignUp">
+            </div>
+
+            <div class="form-group">
+              <label for="resetPassword">Reset Password:</label>
+              <input [(ngModel)]="mentor.resetPassword" placeholder="resetPassword" name="resetPassword"
+                class="form-control" id="resetPassword">
+            </div>
+            <div class="form-group">
+              <label for="resetPasswordDate">Reset Password Date:</label>
+              <input [(ngModel)]="mentor.resetPasswordDate" placeholder="resetPasswordDate" name="resetPasswordDate"
+                class="form-control" id="resetPasswordDate">
+            </div>
+            <div class="form-group">
+              <label for="timeZone">Time Zone:</label>
+              <input [(ngModel)]="mentor.timeZone" placeholder="timeZone" name="timeZone" class="form-control"
+                id="timeZone">
+            </div>
+            <div class="form-group">
+              <label for="rating">Rating:</label>
+              <input [(ngModel)]="mentor.rating" placeholder="rating" name="rating" class="form-control" id="rating">
+            </div>
+            <div class="form-group">
+              <label for="mentorProfile">Mentor Profile:</label>
+              <input [(ngModel)]="mentor.mentorProfile" placeholder="mentorProfile" name="mentorProfile"
+                class="form-control" id="mentorProfile">
+            </div>
+
+            <button class="btn btn-success" (click)="createMentor()">Create</button>
+          </form>
+        </div>
+        <div class="col-lg-6">
+        </div>
+      </div>
+    </div>
+  </article>
+</div>

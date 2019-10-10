@@ -1,0 +1,19 @@
+
+h2
+{color:white;
+text-align:center;}
+
+body{background-image:url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/4Xw4byPvl/purple-satin-fabric-background-waving-in-a-gentle-breeze_vm04sge5l__S0000.jpg");}
+table, td, th {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  height: 50px;color:white;
+}
+tr{color:white}

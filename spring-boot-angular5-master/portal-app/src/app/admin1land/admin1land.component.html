@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+.button {
+  background-color:navy;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top:40px;
+  cursor: pointer;
+}
+</style>
+<body>
+    <a routerLink="/useradmin" class="button">BACK</a>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a routerLink="/useradmin" class="w3-bar-item w3-button w3-padding-large w3-hover-red">Home</a>
+    
+    <a routerLink="/payments" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-red">Remove Payment History</a>
+    
+    
+
+
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button w3-hover-red" title="More">Mentors<i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a routerLink="/addmentor" class="w3-bar-item w3-button w3-hover-red">Add Mentor</a>
+        <a routerLink="/mentors" class="w3-bar-item w3-button w3-hover-red">Delete Mentor</a>
+        <a routerLink="/mentoradmin" class="w3-bar-item w3-button w3-hover-red">Block Mentors</a>
+      </div>
+    </div>
+        <div class="w3-dropdown-hover w3-hide-small">
+          <button class="w3-padding-large w3-button w3-hover-red" title="More">Users<i class="fa fa-caret-down"></i></button>     
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a routerLink="/add" class="w3-bar-item w3-button w3-hover-red">Add User</a>
+            <a routerLink="/users" class="w3-bar-item w3-button w3-hover-red">Delete User</a>
+            <a routerLink="/useradmin1" class="w3-bar-item w3-button w3-hover-red">Block User</a>   
+      </div>
+
+    </div>
+    
+
+
+
+
+
+    
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button w3-hover-red" title="More">Trainings<i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a routerLink="/addtraining" class="w3-bar-item w3-button w3-hover-red">Add Trainings</a>
+        <a routerLink="/trainings" class="w3-bar-item w3-button w3-hover-red">Delete Trainings</a>
+        <a routerLink="/trainings" class="w3-bar-item w3-button w3-hover-red">View Trainings</a>   
+  
+</div>    
+</div>
+
+<div class="w3-dropdown-hover w3-hide-small">
+  <button class="w3-padding-large w3-button w3-hover-red" title="More">Technologies<i class="fa fa-caret-down"></i></button>     
+  <div class="w3-dropdown-content w3-bar-block w3-card-4">
+    <a routerLink="/addtechnology" class="w3-bar-item w3-button w3-hover-red">Add Technologies</a>
+    <a routerLink="/technologies" class="w3-bar-item w3-button w3-hover-red">Delete Technologies</a>
+    <a routerLink="/viewtechnologies" class="w3-bar-item w3-button w3-hover-red">View Technologies</a>   
+
+</div>    
+</div>
+
+
+
+
+      
+
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  
+</div>
+</div>
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">ADMIN DASHBOARD</h2>
+    <p class="w3-opacity"><i>Experience an interactive online instructor-led learning paths powered by #Blended Learning!!!!!</i></p>
+    <p class="w3-justify">Mentor On Demand is India’s only company with many international affiliations such as 
+      Hewlett Packard, Microsoft, CompTIA, IBM, RedHat, EMC and Prometric. With its superior quality conscience
+       and experience, IIHT has always outshined in its quality in terms of training, infrastructure and delivery.
+        Our team of over 150 subject matter experts and trainers supervise every course to make learning 
+        more easy and effective.It's strong placement portal ensures that IIHT students get exposed to
+         the best job offers available in the market today.</p> 
+         <div class="w3-row w3-padding-32">
+          <div class="w3-third">
+            <p>Full Stack Course</p>
+            <img src="https://slaconsultantsgurgaon.in/wp_files/wp-content/uploads_gurgaon/2018/10/Java-Full-Stack-Training-in-Gurgaon.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+          </div>
+          <div class="w3-third">
+            <p>Data Integration Course</p>
+            <img src="https://orageek.com/wp-content/uploads/2019/01/sql-tutorials.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+          </div>
+          <div class="w3-third">
+            <p>Mean Stack Course</p>
+            <img src="https://miro.medium.com/max/870/1*Bb2KCxd9hAKZUDWdzFiWKg.png" class="w3-round" alt="Random Name" style="width:60%">
+          </div>
+        </div>
+        <div class="w3-row w3-padding-32">
+          <div class="w3-third">
+            <p>Miss Antelina Joy<br>Full Stack Course</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUcUaqD0gd6z8vt3T5bcivxgGQx1yxXA6tGu8tvH8K_LuvDK_g" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+          </div>
+          <div class="w3-third">
+            <p>Mr.Antony Vargese<br>Data Integration Course</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGm_7qeuqXVvX3-OCcn79Zb2KFLI2zHBl66DAZwOS2cYGPqzZx" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+          </div>
+          <div class="w3-third">
+            <p>Miss Beena Joy<br>Mean Stack Course</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSunWWAmawNRDFLYVHFH1lUCVfjmhA5BMwbnlNLOG8PUiMosH8ATg" class="w3-round" alt="Random Name" style="width:60%">
+          </div>
+        </div>
+      </div>
+      
+
+  
+     
+      <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+        <h2 class="w3-wide w3-center">CONTACT</h2>
+        <p class="w3-opacity w3-center"><i>We are just a ring away!!!!!</i></p>
+        <div class="w3-row w3-padding-32">
+          <div class="w3-col m6 w3-large w3-margin-bottom">
+            <i class="fa fa-map-marker" style="width:30px"></i>IIHT Corporate Office:15,4th floor,SriLakshmi Complex,MG Road,Bengaluru<br>
+            <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+            <i class="fa fa-envelope" style="width:30px"> </i> Email:interest@iiht.com<br>
+          </div>
+          <div class="w3-col m6">
+            <form action="/action_page.php" target="_blank">
+              <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                <div class="w3-half">
+                  <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                </div>
+                <div class="w3-half">
+                  <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                </div>
+              </div>
+              <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+              <button class="w3-button w3-black w3-section w3-right" onclick="alert('message sent!!!!')">SEND</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+
+
+</body>
+</html>
